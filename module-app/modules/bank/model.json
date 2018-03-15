@@ -1,0 +1,40 @@
+{
+	"name":"test",
+	"top_arrow":[
+		{
+			"name":"pravila"
+		}
+	],
+	"bottom_arrow":[
+		{
+			"name":"bankomat",
+			"properties":[
+				{
+					"count":100
+				},
+				{
+					"crash":0.01
+				}
+			]
+		},
+		{
+			"name":"people",
+			"properties":[
+				{
+					"count":100
+				}
+			]
+		},
+		
+	],
+	"left_arrow":[
+		{
+			"name":"karta"
+		}
+	],
+	"right_arrow":[
+		{
+			"name":"money"
+		}
+	]
+}
