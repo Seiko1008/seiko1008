@@ -21,7 +21,7 @@
 			"name":"people",
 			"properties":[
 				{
-					"count":100
+					"est":100
 				}
 			]
 		},
@@ -29,7 +29,11 @@
 	],
 	"left_arrow":[
 		{
-			"name":"karta"
+			"name":"karta",
+			"properties":[
+					{
+						"snyat":1000
+					}
 		}
 	],
 	"right_arrow":[

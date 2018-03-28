@@ -1,8 +1,11 @@
 var Bank = function(){
+	
 	this.model_path = './modules/bank/model.json'
 	this.model = {};
-	this.snyatie = (karta) => {
-		
+	this.snyatie = (est,snyat) => {
+
+		var ost = est-snyat;
+		return ost;
 	}
 
 	this.load_model = () => {

@@ -1,6 +1,5 @@
 var App = function(){
 	this.modules = {
-		random: new RandGenerator(),
 		bank: new Bank()
 	}
 

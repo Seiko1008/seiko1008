@@ -22,18 +22,22 @@ var data =
 				"name":"people",
 				"properties":[
 					{
-						"count":100
+						"snyat":100
 					}
 				]
-			},
-			
+			}
 		],
 		"left_arrow":[
 			{
-				"name":"karta"
+				"name":"karta",
+				"properties":[
+					{
+					"est":1000
+					}
+				]
 			}
 		],
-		"right_arrow":[
+		"right_arrow":[	
 			{
 				"name":"money"
 			}
@@ -46,14 +50,16 @@ console.log(bank.model)
 //проверяем правильно ли работает генератор чисел
 describe("Модель банкомата", function() {
 
-  it("если октазоустойчивость банкомата 98%, то ожидаю удовлетворить 80% клиентов", function() {
+  it("на карте есть 1000р. хочу снять 100р. ожидаю увидеть остаток на карте = 900", function() {
 
-	var param1 = bank.model.bottom_arrow[1].properties[0].count;
-	var param2 = bank.model.bottom_arrow[0].properties[0].count;
+	var param1 = bank.model.left_arrow[0].properties[0].est;
+	var param2 = bank.model.bottom_arrow[1].properties[0].snyat;
 	
-  	var operation = bank.snyatie()
+  	var operation = bank.snyatie(param1,param2)
+	console.log(operation);
 
-    assert.equal((rand_value >=20 && rand_value <= 30), true);
+    assert.equal((operation==900), true);
+
   });
 
 });
